@@ -14,7 +14,6 @@ This is a simple example to illustrate the use of python-graph. This should give
 # License: MIT (see COPYING file)
 
 import sys
-sys.path.append('..')
 sys.path.append('/usr/lib/graphviz/python/')
 import graph
 import gv
