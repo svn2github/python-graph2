@@ -1,4 +1,5 @@
 #summary python-graph usage example
+#labels Featured
 
 = Introduction =
 
