@@ -62,9 +62,9 @@ dot = gr.write(fmt='dot')
 gvv = gv.readstring(dot)
 gv.layout(gvv,'dot')
 gv.render(gvv,'png','europe.png')
-
-[http://pmatiello.googlepages.com/europe.png Generated PNG file]
-
+}}}
+http://pmatiello.googlepages.com/europe.png
+{{{
 # Then, draw the breadth first search spanning tree rooted in Switzerland
 st = gr.breadth_first_search(root="Switzerland")
 gst = graph.graph()
@@ -75,6 +75,5 @@ gvv = gv.readstring(dot)
 
 gv.layout(gvv,'dot')
 gv.render(gvv,'png','europe-st.png')
-
-[http://pmatiello.googlepages.com/europe-st.png Generated PNG file]
 }}}
+http://pmatiello.googlepages.com/europe-st.png
