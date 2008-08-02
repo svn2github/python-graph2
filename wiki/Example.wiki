@@ -11,9 +11,6 @@ This is a simple example to illustrate the use of python-graph. This should give
 {{{
 #!/usr/bin/env python
 
-# Copyright (c) 2007-2008 Pedro Matiello <pmatiello@gmail.com>
-# License: MIT (see COPYING file)
-
 import sys
 sys.path.append('/usr/lib/graphviz/python/')
 import graph
