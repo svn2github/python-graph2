@@ -12,8 +12,8 @@ This is a simple example to illustrate the use of python-graph. This should give
 #!/usr/bin/env python
 
 import sys
-sys.path.append('/usr/lib/graphviz/python/')
 import graph
+sys.path.append('/usr/lib/graphviz/python/')
 import gv
 
 # Graph creation
