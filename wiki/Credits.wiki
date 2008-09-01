@@ -2,16 +2,16 @@
 
 === Authors ===
 
-Pedro Matiello <[mailto:pmatiello@gmail.com pmatiello@gmail.com]>, [http://pmatiello.googlepages.com/ website]
+Pedro Matiello <[mailto:pmatiello@gmail.com pmatiello@gmail.com]>
 
 
 === Contributors ===
 
-Rhys Ulerich <rhys.ulerich@gmail.com>
+Rhys Ulerich <[mailto:rhys.ulerich@gmail.com rhys.ulerich@gmail.com]>
  * Dijkstra's Shortest path algorithm.
 
-Christian Muise <christian.muise@gmail.com>
+Christian Muise <[mailto:christian.muise@gmail.com christian.muise@gmail.com]>
  * Various Hypergraph algorithms.
 
-Zsolt Haraszti <zsolt@drawwell.net>
+Zsolt Haraszti <[mailto:zsolt@drawwell.net zsolt@drawwell.net]>
  * Weighted random generated graphs.
