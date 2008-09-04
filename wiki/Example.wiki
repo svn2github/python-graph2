@@ -1,12 +1,12 @@
 #summary python-graph usage example.
 #labels Featured
 
-= Introduction =
+=== Introduction ===
 
 This is a simple example to illustrate the use of python-graph. This should give you a fell about how the API is.
 
 
-= Code =
+=== Code ===
 
 {{{
 #!/usr/bin/env python
