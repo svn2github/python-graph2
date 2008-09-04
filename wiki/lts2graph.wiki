@@ -58,8 +58,8 @@ def load_automaton(filename):
 			final = final + data
 		if (datatype == 's'):
 			# Initial state
-				gr.add_node('.')
-				gr.add_arrow('.',data[0])
+			gr.add_node('.')
+			gr.add_arrow('.',data[0])
 		if (datatype == 't'):
 			# Transitions
 			gr.add_arrow(data[1], data[2], label=data[0])
