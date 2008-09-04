@@ -7,11 +7,11 @@ Pedro Matiello <[mailto:pmatiello@gmail.com pmatiello@gmail.com]>
 
 === Contributors ===
 
-Rhys Ulerich <[mailto:rhys.ulerich@gmail.com rhys.ulerich@gmail.com]>
- * Dijkstra's Shortest path algorithm.
-
 Christian Muise <[mailto:christian.muise@gmail.com christian.muise@gmail.com]>
  * Various Hypergraph algorithms.
+
+Rhys Ulerich <[mailto:rhys.ulerich@gmail.com rhys.ulerich@gmail.com]>
+ * Dijkstra's Shortest path algorithm.
 
 Zsolt Haraszti <[mailto:zsolt@drawwell.net zsolt@drawwell.net]>
  * Weighted random generated graphs.
