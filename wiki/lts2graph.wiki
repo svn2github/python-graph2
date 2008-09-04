@@ -97,7 +97,7 @@ gv.render(gvv,'png',filename + '.png')
 }}}
 
 
-= Example =
+=== Example ===
 
 For this input:
 {{{
