@@ -1,6 +1,27 @@
 #summary python-graph most important changes across releases.
 #labels Featured
 
+===Release 1.2.0===
+Sep 9, 2008
+
+*Enhancements:*
+ * Moved to new class style;
+ * Graphs and digraphs are separated classes now;
+ * Added level-based ordering to breadth first search;
+ * Graph object is now iterable;
+ * Graph object is now a container and graphobj[nodeid] iterates too;
+ * Support for node and edge attributes (Issue 5);
+ * Node deletion.
+	
+*Fixes:*
+ * Install now works with a prefix (Issue 10);
+ * Shortest path spanning trees did not had an explicit root.
+
+*Important API Changes:*
+ * breadth_first_search() now returns a tuple;
+ * Arrow methods are gone. Use class digraph + edge methods for directed graphs now.
+
+
 ===Release 1.1.1===
 Sep 4, 2008
 
