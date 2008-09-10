@@ -63,7 +63,7 @@ gv.render(gvv,'png','europe.png')
 
 {{{
 # Then, draw the breadth first search spanning tree rooted in Switzerland
-st = gr.breadth_first_search(root="Switzerland")
+st, order = gr.breadth_first_search(root="Switzerland")
 gst = graph.graph()
 gst.add_spanning_tree(st)
 
