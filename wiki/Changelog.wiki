@@ -9,7 +9,7 @@ Sep 9, 2008
  * Graphs and digraphs are separated classes now;
  * Added level-based ordering to breadth first search;
  * Graph object is now iterable;
- * Graph object is now a container and graphobj[nodeid\] iterates too;
+ * Graph object is now a container and graphobj[nodeid.] iterates too;
  * Support for node and edge attributes (Issue 5);
  * Node deletion.
 	
