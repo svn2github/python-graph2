@@ -1,6 +1,17 @@
 #summary python-graph most important changes across releases.
 #labels Featured
 
+===Release 1.3.1===
+Out 27, 2008
+
+*Fixes:*
+ * Graph and digraph inverse was not working;
+ * Node removal in digraphs was not deleting all relevant edges (Issue 13).
+
+*Important API Changes:*
+ * Deprecated methods were removed.
+
+
 ===Release 1.3.0===
 Sep 28, 2008
 
