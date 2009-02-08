@@ -13,7 +13,7 @@ Christian Muise <[mailto:christian.muise@gmail.com christian.muise@gmail.com]>
 Nathan Davis <[mailto:davisn90210@gmail.com davisn90210@gmail.com]>
  * Faster node insertion.
 
-Rhys Ulerich <[mailto:davisn90210@gmail.com davisn90210@gmail.com]>
+Rhys Ulerich <[mailto:rhys.ulerich@gmail.com rhys.ulerich@gmail.com]>
  * Dijkstra's Shortest path algorithm.
 
 Zsolt Haraszti <[mailto:zsolt@drawwell.net zsolt@drawwell.net]>
