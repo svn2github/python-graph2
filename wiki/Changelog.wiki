@@ -1,6 +1,13 @@
 #summary python-graph most important changes across releases.
 #labels Featured
 
+===Release 1.4.2===
+Feb 22, 2009
+
+Fixes:
+ * find_cycle() trapped itself in infinite recursion in some digraphs (Issue 22).
+
+
 ===Release 1.4.1===
 Feb 09, 2009
 
