@@ -11,10 +11,9 @@ This is a simple example to illustrate the use of python-graph. This should give
 {{{
 #!/usr/bin/env python
 
+import os
 import sys
 import graph
-sys.path.append('/usr/lib/graphviz/python/')
-import gv
 
 # Graph creation
 gr = graph.graph()
@@ -52,11 +51,14 @@ gr.add_edge("Czech Republic","Slovakia")
 gr.add_edge("Czech Republic","Germany")
 gr.add_edge("Slovakia","Hungary")
 
-# Draw as PNG
+# Write to a dot file
 dot = gr.write(fmt='dot')
-gvv = gv.readstring(dot)
-gv.layout(gvv,'dot')
-gv.render(gvv,'png','europe.png')
+f = open('graph.dot', 'w')
+f.write(dot)
+f.close()
+
+# Draw as a png (note: this requires the graphiz 'dot' program to be installed)
+os.system('dot graph.dot -Tpng > europe.png')
 }}}
 
 ||http://pmatiello.googlepages.com/europe.png||
@@ -68,10 +70,13 @@ gst = graph.digraph()
 gst.add_spanning_tree(st)
 
 dot = gst.write(fmt='dot')
-gvv = gv.readstring(dot)
 
-gv.layout(gvv,'dot')
-gv.render(gvv,'png','europe-st.png')
+f = open('graph-st.dot', 'w')
+f.write(dot)
+f.close()
+
+# Draw as a png
+os.system('dot graph-st.dot -Tpng > europe-st.png')
 }}}
 
 ||http://pmatiello.googlepages.com/europe-st.png||
