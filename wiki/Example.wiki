@@ -61,7 +61,7 @@ f.close()
 os.system('dot graph.dot -Tpng > europe.png')
 }}}
 
-||http://pmatiello.googlepages.com/europe.png||
+||http://python-graph.googlecode.com/files/europev2.png||
 
 {{{
 # Then, draw the breadth first search spanning tree rooted in Switzerland
