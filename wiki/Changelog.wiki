@@ -1,10 +1,29 @@
 #summary python-graph most important changes across releases.
 #labels Featured
 
+===Release 1.5.0===
+May 03, 2009
+
+*Enhancements:*
+ * Assymptotically faster Mutual Accessibility (now using Tarjan's algorithm);
+ * DOT-Language importing;
+ * Transitive edge detection;
+ * Critical path algorithm.
+
+*Fixes:*
+ * Cycle detection algorithm was reporting wrong results on some digraphs;
+ * Removed Minimal Spanning Tree from Digraphs as Prim's algorithm does not work on them (Issue 28).
+ * Deletion of A--A edge raised an exception;
+ * Deletion of an node with an A--A edge raised an exception.
+
+*Important API Changes:*
+ * Removed minimal_spanning_tree() method from the digraph class.
+
+
 ===Release 1.4.2===
 Feb 22, 2009
 
-Fixes:
+*Fixes:*
  * find_cycle() trapped itself in infinite recursion in some digraphs (Issue 22).
 
 
