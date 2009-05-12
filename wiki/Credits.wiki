@@ -2,7 +2,7 @@
 
 === Authors and Contributors ===
 
-Pedro Matiello <pmatiello@gmail.com>
+*Pedro Matiello* <[pmatiello@gmail.com]>
 	* Project maintainer/leader;
 	* Graph, Digraph and Hipergraph classes;
 	* Accessibility algorithms;
@@ -15,10 +15,10 @@ Pedro Matiello <pmatiello@gmail.com>
 	* Traversals;
 	* XML reading/writing.
 
-Eugen Zagorodniy <e.zagorodniy@gmail.com>
+*Eugen Zagorodniy* <[e.zagorodniy@gmail.com]>
 	* Mutual Accessibility (Tarjan's Algorithm).
 
-Christian Muise <christian.muise@gmail.com>
+*Christian Muise* <[christian.muise@gmail.com]>
 	* Dot file reading/writing;
 	* Hypergraph class.
 
@@ -32,11 +32,11 @@ Rhys Ulerich <rhys.ulerich@gmail.com>
 	* Dijkstra's Shortest path algorithm.
 
 Roy Smith <roy@panix.com>
-	* Heuristic Searching (A* algorithm).
+	* Heuristic Searching (A`*` algorithm).
 
 Salim Fadhley <sal@stodge.org>
-	* Porting of Roy Smith's A* implementation to python-graph;
-	* Edmond Chow's heuristic for A*.
+	* Porting of Roy Smith's A`*` implementation to python-graph;
+	* Edmond Chow's heuristic for A`*`.
 
 Tomaz Kovacic <tomaz.kovacic@gmail.com>
 	* Transitive edge detection;
