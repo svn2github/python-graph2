@@ -1,0 +1,82 @@
+#summary python-graph usage example.
+#labels Featured
+
+=== Introduction ===
+
+This is a simple example to illustrate the use of python-graph. This should give you a feel about how the API is.
+
+
+=== Code ===
+
+{{{
+#!/usr/bin/env python
+
+import os
+import sys
+import graph
+
+# Graph creation
+gr = graph.graph()
+
+# Add nodes and edges
+gr.add_nodes(["Portugal","Spain","France","Germany","Belgium","Netherlands","Italy"])
+gr.add_nodes(["Switzerland","Austria","Denmark","Poland","Czech Republic","Slovakia","Hungary"])
+gr.add_nodes(["England","Ireland","Scotland","Wales"])
+
+gr.add_edge("Portugal", "Spain")
+gr.add_edge("Spain","France")
+gr.add_edge("France","Belgium")
+gr.add_edge("France","Germany")
+gr.add_edge("France","Italy",)
+gr.add_edge("Belgium","Netherlands")
+gr.add_edge("Germany","Belgium")
+gr.add_edge("Germany","Netherlands")
+gr.add_edge("England","Wales")
+gr.add_edge("England","Scotland")
+gr.add_edge("Scotland","Wales")
+gr.add_edge("Switzerland","Austria")
+gr.add_edge("Switzerland","Germany")
+gr.add_edge("Switzerland","France")
+gr.add_edge("Switzerland","Italy")
+gr.add_edge("Austria","Germany")
+gr.add_edge("Austria","Italy")
+gr.add_edge("Austria","Czech Republic")
+gr.add_edge("Austria","Slovakia")
+gr.add_edge("Austria","Hungary")
+gr.add_edge("Denmark","Germany")
+gr.add_edge("Poland","Czech Republic")
+gr.add_edge("Poland","Slovakia")
+gr.add_edge("Poland","Germany")
+gr.add_edge("Czech Republic","Slovakia")
+gr.add_edge("Czech Republic","Germany")
+gr.add_edge("Slovakia","Hungary")
+
+# Write to a dot file
+dot = gr.write(fmt='dot')
+f = open('graph.dot', 'w')
+f.write(dot)
+f.close()
+
+# Draw as a png (note: this requires the graphiz 'dot' program to be installed)
+os.system('dot graph.dot -Tpng > europe.png')
+}}}
+
+||http://python-graph.googlecode.com/files/europev2.png||
+
+{{{
+# Then, draw the breadth first search spanning tree rooted in Switzerland
+st, order = gr.breadth_first_search(root="Switzerland")
+gst = graph.digraph()
+gst.add_spanning_tree(st)
+
+dot = gst.write(fmt='dot')
+
+f = open('graph-st.dot', 'w')
+f.write(dot)
+f.close()
+
+# Draw as a png
+os.system('dot graph-st.dot -Tpng > europe-st.png')
+}}}
+
+||http://pmatiello.googlepages.com/europe-st.png||
