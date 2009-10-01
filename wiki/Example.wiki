@@ -5,6 +5,8 @@
 
 This is a simple example to illustrate the use of python-graph. This should give you a feel about how the API is.
 
+For the proper API documention, check this [http://www.linux.ime.usp.br/~matiello/python-graph/docs/ link].
+
 
 === Code ===
 
