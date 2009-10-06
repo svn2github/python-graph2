@@ -13,14 +13,19 @@
 	* Random graph generation;
 	* Topological sorting;
 	* Traversals;
-	* XML reading/writing.
+	* XML reading/writing;
+	* Refactoring.
+
+*Christian Muise* <christian.muise@gmail.com>
+	* Dot file reading/writing;
+	* Hypergraph class;
+	* Refactoring.
 
 *Eugen Zagorodniy* <e.zagorodniy@gmail.com>
 	* Mutual Accessibility (Tarjan's Algorithm).
 
-*Christian Muise* <christian.muise@gmail.com>
-	* Dot file reading/writing;
-	* Hypergraph class.
+*Johannes Reinhardt* <jreinhardt@ist-dein-freund.de>
+	* Refactoring.
 
 *Nathan Davis* <davisn90210@gmail.com>
 	* Faster node insertion.
@@ -32,11 +37,12 @@
 	* Dijkstra's Shortest path algorithm.
 
 *Roy Smith* <roy@panix.com>
-	* Heuristic Searching (A`*` algorithm).
+	* Heuristic Searching (A* algorithm).
 
 *Salim Fadhley* <sal@stodge.org>
-	* Porting of Roy Smith's A`*` implementation to python-graph;
-	* Edmond Chow's heuristic for A`*`.
+	* Porting of Roy Smith's A* implementation to python-graph;
+	* Edmond Chow's heuristic for A*;
+	* Refactoring.
 
 *Tomaz Kovacic* <tomaz.kovacic@gmail.com>
 	* Transitive edge detection;
