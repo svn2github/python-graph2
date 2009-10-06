@@ -37,11 +37,11 @@
 	* Dijkstra's Shortest path algorithm.
 
 *Roy Smith* <roy@panix.com>
-	* Heuristic Searching (A* algorithm).
+	* Heuristic Searching (A`*` algorithm).
 
 *Salim Fadhley* <sal@stodge.org>
-	* Porting of Roy Smith's A* implementation to python-graph;
-	* Edmond Chow's heuristic for A*;
+	* Porting of Roy Smith's A`*` implementation to python-graph;
+	* Edmond Chow's heuristic for A`*`;
 	* Refactoring.
 
 *Tomaz Kovacic* <tomaz.kovacic@gmail.com>
