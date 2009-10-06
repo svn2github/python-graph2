@@ -46,7 +46,8 @@
 
 *Tomaz Kovacic* <tomaz.kovacic@gmail.com>
 	* Transitive edge detection;
-	* Critical path algorithm. 
+	* Critical path algorithm;
+	* Logo design.
 
 *Zsolt Haraszti* <zsolt@drawwell.net>
 	* Weighted random generated graphs.
