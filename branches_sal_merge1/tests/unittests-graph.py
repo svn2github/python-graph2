@@ -29,7 +29,7 @@ Unittests for graph.classes.Graph
 
 import unittest
 import pygraph
-from pygraph.algorithms.generators import generate
+from pygraph.algorithms.generators import generate, generate_independent_edges
 from pygraph.classes.exceptions import AdditionError
 from pygraph.classes.graph import graph
 import testlib
@@ -164,9 +164,7 @@ class test_graph(unittest.TestCase):
         self.assertTrue(gr1.nodes() == gr1c.nodes())
         self.assertTrue(gr1.edges() == gr1c.edges())
     
-    
     # Add spanning tree
-    
     def test_add_spanning_tree(self):
         gr = graph()
         st = {0: None, 1: 0, 2:0, 3: 1, 4: 2, 5: 3}
@@ -181,6 +179,21 @@ class test_graph(unittest.TestCase):
         gr.add_spanning_tree(st)
         self.assertTrue(gr.nodes() == [])
         self.assertTrue(gr.edges() == [])
+        
+    def testRandomIndependentEdgesGraphEmpty(self):
+        gr = graph()
+        generate_independent_edges(gr, 5, 0.0)
+        self.assertTrue(gr.edges() == [])
+
+    def testRandomIndependentEdgesGraphComplete(self):
+        gr = graph()
+        generate_independent_edges(gr, 5, 1.0)
+        self.assertTrue(len(gr.edges()) == 5 * 4)
+
+    def testRandomIndependentEdgesGraphCompleteWithLoops(self):
+        gr = graph()
+        generate_independent_edges(gr, 5, 1.0, True)
+        self.assertTrue(len(gr.edges()) == 5 * 4 + 5)
 
 if __name__ == "__main__":
     unittest.main()

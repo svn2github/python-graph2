@@ -33,7 +33,7 @@ Random graph generators.
 # Imports
 from pygraph.classes.graph import graph
 from pygraph.classes.digraph import digraph
-from random import randint
+from random import randint, random
 
 
 # Generator
@@ -66,12 +66,7 @@ def generate(num_nodes, num_edges, directed=False, weight_range=(1, 1)):
     random_graph.add_nodes(nodes)
     
     # Build a list of all possible edges
-    edges = []
-    edges_append = edges.append
-    for x in nodes:
-        for y in nodes:
-            if ((directed and x != y) or (x > y)):
-                edges_append((x, y))
+    edges = generate_possible_edges(nodes, directed, False)
     
     # Randomize the list
     for i in range(len(edges)):
@@ -86,3 +81,60 @@ def generate(num_nodes, num_edges, directed=False, weight_range=(1, 1)):
         random_graph.add_edge(each[0], each[1], wt = randint(min_wt, max_wt))
 
     return random_graph
+
+def generate_independent_edges(graph, num_nodes, prob_edges, allow_loops=False):
+    """
+    Generate an Erdos-Renyi random graph. Possible edges are added with 
+    a fixed probability.
+
+    @type:  graph: graph
+    @param: graph: Graph.
+
+    @type:  num_nodes: number
+    @param: num_nodes: Number of nodes.
+
+    @type:  prob_edges: number
+    @param: prob_edges: Probability for adding a possible edge.
+
+    @type:  allow_loops: bool
+    @param: allow_loops: If set to True, loops can be added. Defaults to False.
+    """
+    # Discover if graph is directed or not
+    directed = isinstance( graph, digraph )
+
+    # Nodes first
+    nodes = xrange(num_nodes)
+    graph.add_nodes(nodes)
+    
+    # Build a list of all possible edges
+    edges = generate_possible_edges(nodes, directed, allow_loops)
+
+    # Now do a random experiment for every edge and add it in case of success
+    for each in edges:
+        if random() < prob_edges:
+            graph.add_edge(each[0], each[1])
+ 
+
+def generate_possible_edges(nodes, directed, add_loops=False):
+    """
+    Generates a list of all possible edges for num_nodes vertices.
+
+    @type:  nodes: list
+    @param: nodes: List of nodes.
+
+    @type:  directed: bool
+    @param: directed: Flag that specifies if the edges are directed or undirected.
+
+    @type:  add_loops: bool
+    @param: add_loops: If set to True, all loops are generated, too. Defaults to False.
+
+    @rtype:  list
+    @return: List of all possible edges.
+    """
+    edges = []
+    edges_append = edges.append
+    for x in nodes:
+        for y in nodes:
+            if ((directed and x != y) or (x > y) or (add_loops and x == y)):
+                edges_append((x, y))
+    return edges 
