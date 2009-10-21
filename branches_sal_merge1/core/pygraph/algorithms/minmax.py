@@ -35,7 +35,7 @@ _reconstruct_path
 
 from heapq import heappush, heappop
 from pygraph.classes.exceptions import NodeUnreachable
-from graph.classes.Digraph import digraph
+from pygraph.classes.digraph import digraph
 
 # Minimal spanning tree
 
@@ -383,8 +383,8 @@ def cut_tree(igraph, caps = None):
     """
     Constructs a Gomory-Hu cut tree by applying the algorithm of Gusfield
 
-    @type graph: graph
-    @param graph: Graph
+    @type igraph: graph
+    @param igraph: Graph
 
     @type caps: dictionary
     @param caps: Dictionary containing a maximum capacity for each edge. Defaults to the weights of the edges.
