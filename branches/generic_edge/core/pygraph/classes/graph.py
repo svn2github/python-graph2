@@ -186,7 +186,7 @@ class graph ( basegraph, common, labeling, ):
         self.del_edge_labeling((u, v))  
         if (u != v):
             self.node_neighbors[v].remove(u)
-            self.del_edge_labeling(v, u) # TODO: This is redundant
+            self.del_edge_labeling((v, u)) # TODO: This is redundant
 
     def has_edge(self, (u, v)):
         """

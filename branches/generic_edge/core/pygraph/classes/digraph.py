@@ -184,11 +184,11 @@ class digraph (basegraph, common, labeling):
         """
         for each in list(self.incidents(node)):
             # Delete all the edges incident on this node
-            self.del_edge(each, node)
+            self.del_edge((each, node))
             
         for each in list(self.neighbors(node)):
             # Delete all the edges pointing to this node.
-            self.del_edge(node, each)
+            self.del_edge((node, each))
         
         # Remove this node from the neighbors and incidents tables   
         del(self.node_neighbors[node])
