@@ -49,6 +49,9 @@ class hypergraph (basegraph, common, labeling):
     cut_hyperedges, cut_nodes
     """
 
+    # Technically this isn't directed, but it gives us the right
+    #  behaviour with the parent classes.
+    DIRECTED = True
 
     def __init__(self):
         """
