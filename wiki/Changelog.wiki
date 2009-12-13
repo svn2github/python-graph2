@@ -1,6 +1,23 @@
 #summary python-graph most important changes across releases.
 #labels Featured
 
+===Release 1.6.3===
+Dec 13, 2009
+
+*Enhancements:*
+ * Added Python3 support (support for Python 2.5 and lower was dropped).
+
+*Fixes:*
+ * Adding a graph to a digraph now works (Issue 39);
+ * Fixed the reading of graphs and digraphs stored in XML.
+
+*Important API Changes:*
+ * Edges are now passed around as generic objects. In the case of graph / digraph this is a tuple.
+ * Removed traversal() method from graph and digraph classes;
+ * Removed accessibility, connected_components, cut_nodes and cut_hyperedges from hypergraph class;
+ * Functions for reading a hypergraph doesn't take an empty hypergraph as argument anymore.
+
+
 ===Release 1.6.2===
 Sep 30, 2009
 
