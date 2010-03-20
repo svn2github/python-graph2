@@ -29,6 +29,7 @@
  * Mutual Accessibility (Tarjan's Algorithm).
 
 *Johannes Reinhardt* <jreinhardt@ist-dein-freund.de>
+ * Maximum-flow algorithm;
  * Refactoring.
 
 *Nathan Davis* <davisn90210@gmail.com>
@@ -53,6 +54,7 @@
  * Project commiter;
  * Transitive edge detection;
  * Critical path algorithm;
+ * Bellman-Ford algorithm;
  * Logo design.
 
 *Zsolt Haraszti* <zsolt@drawwell.net>
