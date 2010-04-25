@@ -1,5 +1,5 @@
+#summary Installing python-graph on supported platforms
 #labels Featured
-Installing python-graph on supported platforms
 
 == Automated Install (with Distribute) ==
 
