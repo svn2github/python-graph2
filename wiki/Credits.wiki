@@ -33,7 +33,7 @@
  * Gomory-Hu cut-tree algorithm;
  * Refactoring.
 
-Juarez Bochi <jbochi@gmail.com>
+*Juarez Bochi* <jbochi@gmail.com>
  * Pagerank algorithm.
 
 *Nathan Davis* <davisn90210@gmail.com>
