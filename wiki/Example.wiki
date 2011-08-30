@@ -72,7 +72,7 @@ gv.layout(gvv,'dot')
 gv.render(gvv,'png','europe.png')
 }}}
 
-||http://pmatiello.googlepages.com/europe.png||
+||http://dl.dropbox.com/u/1823095/python-graph/europe.png||
 
 {{{
 # Then, draw the breadth first search spanning tree rooted in Switzerland
