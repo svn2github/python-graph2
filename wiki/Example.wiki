@@ -87,4 +87,4 @@ gv.layout(gvv,'dot')
 gv.render(gvv,'png','europe-st.png')
 }}}
 
-||http://pmatiello.googlepages.com/europe-st.png||
+||http://dl.dropbox.com/u/1823095/python-graph/europe-st.png||
