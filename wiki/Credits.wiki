@@ -76,3 +76,6 @@
 
 *Jonathan Sternberg* <jonathansternberg@gmail.com>
 	* Graph comparison (bug fix).
+
+*Daniel Merritt* <dmerritt@gmail.com>
+	* Fixed reading of XML-stored graphs with edge attributes.
