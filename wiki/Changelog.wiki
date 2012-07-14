@@ -1,6 +1,12 @@
 #summary python-graph most important changes across releases.
 #labels Featured
 
+===Release 1.8.2===
+Jul 14, 2012
+
+*Fixes:*
+ * The find_cycle function now accepts instances of any subtype of graph and digraph.
+
 ===Release 1.8.1===
 Jan 08, 2012
 
